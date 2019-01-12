@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <Button
+        android:id="@+id/sendButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="GetPrinterStatus"/>
+      <Button
+        android:id="@+id/sendclearButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="ClearScreen"/>
+    </LinearLayout>
+  <TextView
+    android:id="@+id/getTextView"
+    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="730dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#BFF"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+</LinearLayout>
+</ScrollView>

@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
     <metadata>
         <id>Xamarin.Android.SerialPort</id>
-        <version>1.0.0</version>
-        <authors>Bence Lénárt</authors>
+        <version>1.0.0.0</version>
+        <authors>Bence LÃ©nÃ¡rt</authors>
         <owners>officialdoniald</owners>
         <projectUrl>https://github.com/officialdoniald/Xamarin.Android.SerialPort</projectUrl>
         <license type="expression">Apache-2.0</license>
@@ -11,7 +11,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <releaseNotes>v1</releaseNotes>
         <description>Native Serial Port wrapper for Xamarin.Android.</description>
-        <copyright>Copyright ©2019 Bence Lénárt</copyright>
+        <copyright>Copyright Â©2019 Bence LÃ©nÃ¡rt</copyright>
         <tags>xamarin android serialport serial port</tags>
 
         <dependencies>

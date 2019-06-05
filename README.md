@@ -10,3 +10,5 @@ Create .aar file with grandle: go to grandle tab on the right of the Android Stu
 The .aar file youe can find at the project folder and then the \libserial\build\outputs\aar.
 Then create a Bining Xamarin Android Library, with the grandle (what you gave in the grandle) minimum adroid version, and add it to the Jar folder. (https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-a-jar/ or https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-an-aar/)
 Rebuild. And that's it. Watch out for the namespaces. The namespace will be the java's namespace with upper case at the start.
+
+Don't forget to copy the lib folder to your project!

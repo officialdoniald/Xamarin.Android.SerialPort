@@ -1,8 +1,6 @@
 # Xamarin.Android.SerialPort
 Serial Port wrapper for Xamarin.Android. 
 
-Don't forget to copy the lib folder to your project!
-
 If you want to change some feature of the Serial Port, just clone this repo and change it. In the SerialPort project you have to go to the SerialPortWrapper folder and the SerialPort.cs.
 
 After the update you have to Rebuild, and if you want to use the recently updatet SerialPort class, you have to add the dll (from bin/Release or Debug) to the target Project.

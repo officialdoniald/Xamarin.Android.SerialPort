@@ -70,10 +70,12 @@ namespace SerialPort.SerialPortWrapper
                 timeout,
                 flowControl);
 
-            OnReceiveThread = new System.Threading.Thread(()=> 
+            OnReceiveThread = new System.Threading.Thread(() =>
             {
                 while (!_stopOnReceive)
                 {
+                    System.Threading.Thread.Sleep(100);
+
                     var buffer = Read();
 
                     if (buffer != null && buffer.Length > 0)
@@ -87,6 +89,20 @@ namespace SerialPort.SerialPortWrapper
             OnReceiveThread.Start();
 
             _serialPort = Serial.NativeSerialPort;
+        }
+
+        /// <summary>
+        /// Start the Receiving Thread.
+        /// </summary>
+        public void StartOnReceiveThread()
+        {
+            if (OnReceiveThread.IsAlive)
+            {
+                OnReceiveThread.Abort();
+            }
+
+            OnReceiveThread.IsBackground = true;
+            OnReceiveThread.Start();
         }
 
         /// <summary>
@@ -185,7 +201,7 @@ namespace SerialPort.SerialPortWrapper
         {
             return _serialPort.Readlines(size, eol);
         }
-        
+
         /// <summary>
         /// Write a byte[] to the serial port.
         /// @throws SerialIOException I/O Error.
@@ -299,7 +315,7 @@ namespace SerialPort.SerialPortWrapper
         {
             _serialPort.SetBreak(level);
         }
-        
+
         /// <summary>
         /// Close the Serial Port.
         /// </summary>
@@ -313,15 +329,10 @@ namespace SerialPort.SerialPortWrapper
         /// </summary>
         public void StopReceive()
         {
-            _stopOnReceive = true;
-        }
-
-        /// <summary>
-        /// Start the Receiving Thread.
-        /// </summary>
-        public void StartReceive()
-        {
-            _stopOnReceive = false;
+            if (OnReceiveThread.IsAlive)
+            {
+                OnReceiveThread.Abort();
+            }
         }
 
         /// <summary>

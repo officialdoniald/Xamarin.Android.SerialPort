@@ -26,8 +26,6 @@ namespace SerialPortPoc
 		
 		public static void UpdateIdValues()
 		{
-			global::SerialPort.Resource.String.app_name = global::SerialPortPoc.Resource.String.app_name;
-			global::SerialPort.Resource.String.hello = global::SerialPortPoc.Resource.String.hello;
 		}
 		
 		public partial class Attribute
@@ -46,8 +44,8 @@ namespace SerialPortPoc
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			// aapt resource value: 0x7F010000
+			public const int Icon = 2130771968;
 			
 			static Drawable()
 			{
@@ -62,14 +60,14 @@ namespace SerialPortPoc
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int getTextView = 2131034114;
+			// aapt resource value: 0x7F020000
+			public const int getTextView = 2130837504;
 			
-			// aapt resource value: 0x7f050000
-			public const int sendButton = 2131034112;
+			// aapt resource value: 0x7F020001
+			public const int sendButton = 2130837505;
 			
-			// aapt resource value: 0x7f050001
-			public const int sendclearButton = 2131034113;
+			// aapt resource value: 0x7F020002
+			public const int sendclearButton = 2130837506;
 			
 			static Id()
 			{
@@ -84,7 +82,7 @@ namespace SerialPortPoc
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f030000
+			// aapt resource value: 0x7F030000
 			public const int Main = 2130903040;
 			
 			static Layout()
@@ -100,17 +98,11 @@ namespace SerialPortPoc
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040003
-			public const int ApplicationName = 2130968579;
+			// aapt resource value: 0x7F040000
+			public const int ApplicationName = 2130968576;
 			
-			// aapt resource value: 0x7f040002
-			public const int Hello = 2130968578;
-			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
-			
-			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			// aapt resource value: 0x7F040001
+			public const int Hello = 2130968577;
 			
 			static String()
 			{

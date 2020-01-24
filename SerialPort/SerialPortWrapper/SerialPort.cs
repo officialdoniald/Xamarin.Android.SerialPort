@@ -23,6 +23,8 @@ namespace SerialPort.SerialPortWrapper
         /// </summary>
         private bool _stopOnReceive = true;
 
+        private int _howManyDelayOnReceivingThread = 200;
+
         /// <summary>
         /// Read from the Serial Port and send the readed datas to the subscribers.
         /// </summary>
@@ -74,7 +76,7 @@ namespace SerialPort.SerialPortWrapper
             {
                 while (!_stopOnReceive)
                 {
-                    System.Threading.Thread.Sleep(100);
+                    System.Threading.Thread.Sleep(_howManyDelayOnReceivingThread);
 
                     var buffer = Read();
 
@@ -89,6 +91,15 @@ namespace SerialPort.SerialPortWrapper
             OnReceiveThread.Start();
 
             _serialPort = Serial.NativeSerialPort;
+        }
+
+        /// <summary>
+        /// Change the Delay on the Receiving Thread.
+        /// </summary>
+        /// <param name="time"></param>
+        public void ChangeDelayOnReceivingThread(int time)
+        {
+            _howManyDelayOnReceivingThread = time;
         }
 
         /// <summary>

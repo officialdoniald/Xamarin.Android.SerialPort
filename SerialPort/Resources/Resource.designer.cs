@@ -15,7 +15,7 @@ namespace SerialPort
 {
 	
 	
-	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -40,11 +40,11 @@ namespace SerialPort
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f020001
-			public static int app_name = 2130837505;
+			// aapt resource value: 0x7F010000
+			public static int app_name = 2130771968;
 			
-			// aapt resource value: 0x7f020000
-			public static int hello = 2130837504;
+			// aapt resource value: 0x7F010001
+			public static int hello = 2130771969;
 			
 			static String()
 			{

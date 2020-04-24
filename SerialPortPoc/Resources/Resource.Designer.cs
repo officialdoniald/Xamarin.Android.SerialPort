@@ -15,7 +15,7 @@ namespace SerialPortPoc
 {
 	
 	
-	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -26,6 +26,8 @@ namespace SerialPortPoc
 		
 		public static void UpdateIdValues()
 		{
+			global::SerialPort.Resource.String.app_name = global::SerialPortPoc.Resource.String.app_name;
+			global::SerialPort.Resource.String.hello = global::SerialPortPoc.Resource.String.hello;
 		}
 		
 		public partial class Attribute
@@ -101,8 +103,14 @@ namespace SerialPortPoc
 			// aapt resource value: 0x7F040000
 			public const int ApplicationName = 2130968576;
 			
+			// aapt resource value: 0x7F040002
+			public const int app_name = 2130968578;
+			
 			// aapt resource value: 0x7F040001
 			public const int Hello = 2130968577;
+			
+			// aapt resource value: 0x7F040003
+			public const int hello = 2130968579;
 			
 			static String()
 			{

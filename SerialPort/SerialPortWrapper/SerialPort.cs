@@ -21,7 +21,7 @@ namespace SerialPort.SerialPortWrapper
         /// <summary>
         /// Stop the reading from the Serial Port.
         /// </summary>
-        private bool _stopOnReceive = true;
+        private bool _stopOnReceive = false;
 
         private int _howManyDelayOnReceivingThread = 200;
 

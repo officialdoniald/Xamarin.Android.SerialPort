@@ -88,7 +88,7 @@ namespace SerialPort.SerialPortWrapper
             });
 
             OnReceiveThread.IsBackground = true;
-            OnReceiveThread.Start();
+            //OnReceiveThread.Start();
 
             _serialPort = Serial.NativeSerialPort;
         }
@@ -344,6 +344,11 @@ namespace SerialPort.SerialPortWrapper
             {
                 OnReceiveThread.Abort();
             }
+        }
+
+        public int BytesToRead
+        {
+            get => _serialPort.Available();
         }
 
         /// <summary>

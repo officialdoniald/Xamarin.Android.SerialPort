@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SerialPortPoc.SerialPortPoc" android:versionCode="1" android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SerialPortPoc.SerialPortPoc" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal">
+	<uses-sdk android:minSdkVersion="26" android:targetSdkVersion="30" />
 	<application android:label="SerialPortPoc"></application>
 </manifest>

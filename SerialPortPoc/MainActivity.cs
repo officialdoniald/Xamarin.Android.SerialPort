@@ -38,7 +38,7 @@ namespace SerialPortPoc
         private void OpenLibSerialPort()
         {
             LibSerialPort = new SerialPort.SerialPortWrapper.SerialPort(
-               "/dev/tty",
+               "/dev/ttyS3",
                115200,
                Stopbits.One,
                Parity.None,

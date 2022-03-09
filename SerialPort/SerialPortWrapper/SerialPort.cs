@@ -21,7 +21,7 @@ namespace SerialPort.SerialPortWrapper
         /// <summary>
         /// Stop the reading from the Serial Port.
         /// </summary>
-        private bool _stopOnReceive = true;
+        private bool _stopOnReceive = false;
 
         private int _howManyDelayOnReceivingThread = 200;
 
@@ -88,7 +88,7 @@ namespace SerialPort.SerialPortWrapper
             });
 
             OnReceiveThread.IsBackground = true;
-            OnReceiveThread.Start();
+            //OnReceiveThread.Start();
 
             _serialPort = Serial.NativeSerialPort;
         }
@@ -344,6 +344,11 @@ namespace SerialPort.SerialPortWrapper
             {
                 OnReceiveThread.Abort();
             }
+        }
+
+        public int BytesToRead
+        {
+            get => _serialPort.Available();
         }
 
         /// <summary>
